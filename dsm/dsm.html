@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
+<title>Dmytro Semenov</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="dmytro-semenov">
+<h1 class="title">Dmytro Semenov</h1>
+<h2 class="subtitle" id="python-developer">Python developer</h2>
+
+<div class="section" id="summary">
+<h1>Summary</h1>
+<ul class="simple">
+<li><strong>Having overall 20 years of working experience.</strong></li>
+<li><strong>Expert level in</strong> Python, OOP, Delphi, Lazarus, Object Pascal, Free Pascal, VBA, Database design, Firebird, SQL, MS Office, LibreOffice, Matlab, GNU Octave, Simulink, Ubuntu;</li>
+<li><strong>Middle level in</strong> Python tools (pip, virtualenv, pelican, docutils, ReStructuredText, doctest, unittest, nose, numpy, scipy, pandas, statsmodels), django, T-SQL, SQLite MS SQL Server, HTML, JavaScript, CSS, XML, Subversion, Mantis, VIM, UML, Debian, MS Windows (XP, Server 2003, Server 2008), Lua;</li>
+<li><strong>Basic level in</strong> pyramid, web2py, PyQt, JavaScript, JQuery, Bootstrap3, PostgtreSQL, MySQL, С++, Java, LaTex</li>
+<li>I have the ability to create flexible and robust system architecture, Team Player, conscientious and responsible worker</li>
+</ul>
+</div>
+<div class="section" id="summary-of-work-experience">
+<h1>Summary of Work Experience</h1>
+<div class="section" id="september-1999-now">
+<h2>September 1999 -- now</h2>
+<div class="section" id="kyiv-national-economic-university-named-after-vadym-hetman">
+<h3>Kyiv National Economic University named after Vadym Hetman</h3>
+</div>
+<div class="section" id="lecturer-and-software-developer">
+<h3>Lecturer and software developer</h3>
+<div class="section" id="responsibilities-and-key-accomplishments">
+<h4>Responsibilities and Key Accomplishments:</h4>
+<ul class="simple">
+<li>curriculum design, developing and teaching courses: “Informatics”, “Economical cybernetics”, “System analysis”, “Discrete analysis”, “Multi-criteria models in the intelligent decision systems”</li>
+<li>co-authored books: “Economical cybernetics”, “System analysis”, “Glossary of terms information systems and technologies”, “Discrete analysis”</li>
+<li>design, development and maintenance software solutions for admission stage to university.</li>
+<li>deployment and maintain state's software and DB (like Unified National Electronic Database on Education).  User support (training, distribution, performance control)</li>
+<li>deputy head of admissions for the faculty (subordinate to 15 employees)</li>
+</ul>
+</div>
+<div class="section" id="technologies">
+<h4>Technologies:</h4>
+<ul class="simple">
+<li>markup languages (html, markdown), advanced MS Word or LO Writer (styles, templates), MS Excel or LO Calc, MS Access, VBA;</li>
+<li>MS Excel or LO Calc, Matlab, GNU Octave;</li>
+<li>Lazarus, Delphi 2006, Firebird, Debian, Ubuntu, MS Windows (XP ̧ Server 2003, Server 2008)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="june-2007-may-2009">
+<h2>June 2007 -- May 2009</h2>
+<div class="section" id="intelligent-software-http-www-intellisoftware-net-for-daintel-http-www-daintel-com">
+<h3>Intelligent Software (<a class="reference external" href="http://www.intellisoftware.net">http://www.intellisoftware.net</a>) for Daintel (<a class="reference external" href="http://www.daintel.com">http://www.daintel.com</a>)</h3>
+</div>
+<div class="section" id="software-developer">
+<h3>Software developer</h3>
+<div class="section" id="id1">
+<h4>Responsibilities and Key Accomplishments:</h4>
+<ul class="simple">
+<li>Developing Business Intelligent (BI) module;</li>
+<li>Measuring equipment available data presentation (pressure, blood tests, etc.).</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h4>Technologies:</h4>
+<ul class="simple">
+<li>Delphi 2006, Firebird 1.5, MS Windows.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="october-2006-may-2007">
+<h2>October 2006 -- May 2007</h2>
+<div class="section" id="constructit">
+<h3>ConstructIT</h3>
+</div>
+<div class="section" id="id3">
+<h3>Software developer</h3>
+<div class="section" id="id4">
+<h4>Responsibilities and Key Accomplishments:</h4>
+<ul class="simple">
+<li>Developing system for construction scaffolds 3D modeling.</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h4>Technologies:</h4>
+<ul class="simple">
+<li>Delphi 7, MS SQL Server 2000, MS Windows.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>1998 -- 2007</h2>
+<div class="section" id="scientific-and-technical-center-kamet-sapr">
+<h3>Scientific and technical center “KAMET-SAPR”</h3>
+</div>
+<div class="section" id="leading-engineer-programmer">
+<h3>Leading engineer-programmer</h3>
+<div class="section" id="id7">
+<h4>Responsibilities and Key Accomplishments:</h4>
+<ul class="simple">
+<li>Developing document management system for The Ministry of industrial policy of Ukraine;</li>
+<li>Developing laboriousness in the ERP system for PJSC «Sumy Frunze NPO».</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h4>Technologies:</h4>
+<ul class="simple">
+<li>Delphi, MS Access.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>1996 -- 1998</h2>
+<div class="section" id="scientific-center-of-radiation-medicine-of-nams-of-ukraine">
+<h3>Scientific center of radiation medicine of NAMS of Ukraine</h3>
+</div>
+<div class="section" id="engineer-ecologist">
+<h3>Engineer-ecologist</h3>
+<div class="section" id="id10">
+<h4>Responsibilities and Key Accomplishments:</h4>
+<ul class="simple">
+<li>The radiological measurements, mathematical modeling</li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h4>Technologies:</h4>
+<ul class="simple">
+<li>MS Office, Matlab</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="academic-records">
+<h1>Academic records</h1>
+<p><strong>1991 - 1996. Kyiv University named after Taras Shevchenko.</strong></p>
+<p>Faculty of Mechanics and Mathematics</p>
+<p>Graduate: The degree of Master of mathematics in Probability Theory and Mathematical Statistics.</p>
+<p><strong>2000. International research and training centre UNESCO.</strong></p>
+<p>Refresher courses.</p>
+<p>Graduate: UNIX (SCO OpenServer) administrator.</p>
+</div>
+<div class="section" id="foreign-languages-skills">
+<h1>Foreign Languages Skills</h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Ukrainian:</th><td class="field-body">fluent (native)</td>
+</tr>
+<tr class="field"><th class="field-name">Russian:</th><td class="field-body">fluent</td>
+</tr>
+<tr class="field"><th class="field-name">English:</th><td class="field-body">upper intermediate (reading, chatting), intermediate (speaking)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="contacts">
+<h1>Contacts</h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Phones:</th><td class="field-body">( 097 ) 585-5283, ( 099 ) 248-9642</td>
+</tr>
+<tr class="field"><th class="field-name">Email:</th><td class="field-body"><a class="reference external" href="mailto:dmitry.5674&#64;gmail.com">dmitry.5674&#64;gmail.com</a></td>
+</tr>
+<tr class="field"><th class="field-name">Skype:</th><td class="field-body">dmitry.5674</td>
+</tr>
+<tr class="field"><th class="field-name">http:</th><td class="field-body"><a class="reference external" href="http://dmisem.github.io/">http://dmisem.github.io/</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
