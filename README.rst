@@ -1,8 +1,8 @@
-#####
-py_cv
-#####
-
+#############
 CV generator.
+#############
+
+`My CV in RestructuredText <dsm/dsm.rst>`_
 
 It was created for two reasons:
 
