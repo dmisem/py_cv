@@ -5,6 +5,6 @@ import os
 
 txt = op.join(os.getcwd(), 'dsm', 'dsm.txt')
 rst = op.join(os.getcwd(), 'dsm', 'dsm.rst')
-html = op.join(os.getcwd(), 'html', 'dsm.html')
+html = op.join(os.getcwd(), 'html', 'index.html')
 txt2rst(txt, rst)
 publish_cmdline(writer_name='html', argv=[rst, html])
