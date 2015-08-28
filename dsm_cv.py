@@ -3,11 +3,8 @@ from docutils.core import publish_cmdline
 import os.path as op
 import os
 
-fname = op.join(os.getcwd(), 'dsm', 'dsm')
-names = dict(
-    txt='%s.txt' % fname,
-    rst='%s.rst' % fname,
-    html='%s.html' % fname,
-)
-txt2rst(names['txt'], names['rst'])
-publish_cmdline(writer_name='html', argv=[names['rst'], names['html']])
+txt = op.join(os.getcwd(), 'dsm', 'dsm.txt')
+rst = op.join(os.getcwd(), 'dsm', 'dsm.rst')
+html = op.join(os.getcwd(), 'html', 'dsm.html')
+txt2rst(txt, rst)
+publish_cmdline(writer_name='html', argv=[rst, html])
